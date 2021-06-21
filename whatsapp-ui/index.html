@@ -1,0 +1,445 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/styles/tailwind.css" />
+    <title>Whatzapp clone</title>
+  </head>
+  <body>
+	  <div  class="h-screen overflow-hidden">
+
+	 
+    <div class="bg-whatzapp-h max-w-full sticky top-0 z-50 ">
+      <!-- top header -->
+      <div class="flex items-center text-white h-16">
+        <div class="flex px-5 flex-grow flex-2">
+          <p class="flex flex-grow font-semibold text-lg">WhatsApp</p>
+        </div>
+
+        <div class="grid flex-1 grid-cols-3 -pr-10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            class="fill-current"
+            fill="#FFFFFF"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#FFFFFF"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Bottom Header -->
+      <div
+        class="
+          px-5
+          flex
+          items-center
+          justify-between
+          pb-5
+          text-gray-300
+          font-semibold
+          text-sm
+        "
+      >
+        <div class="tracking-wider">CALLS</div>
+        <div class="flex space-x-2 items-center tracking-wider">
+          <div class="relative text-white font-semibold">
+            CHATS
+            <div
+              class="h-1 -left-5 w-28 rounded bg-white absolute -bottom-5 pb-0"
+            ></div>
+          </div>
+          <span
+            class="
+              text-xs
+              flex
+              items-center
+              justify-center
+              bg-white
+              text-black
+              font-semibold
+              rounded-full
+              h-5
+              w-5
+            "
+            >17</span
+          >
+        </div>
+        <div class="tracking-wider">CONTACTS</div>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div class="px-5">
+      <div class="relative py-4 flex items-center space-x-3 overflow-hidden">
+        <!-- avator -->
+        <div class="flex items-center">
+          <img
+            class="rounded-full w-14 h-14 object-contain"
+            src="https://firebasestorage.googleapis.com/v0/b/amzn-clone-starter-nextjs.appspot.com/o/collo.jpg?alt=media&token=9e3f86cb-8169-4c0e-a6df-5e0d03e95f65"
+            alt="collo"
+          />
+        </div>
+
+        <!-- message -->
+        <div class="flex flex-grow flex-shrink-0 flex-1 flex-col">
+          <h1 class="font-semibold">Collins</h1>
+          <div class="flex items-center space-x-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="36px"
+              viewBox="0 0 24 24"
+              width="16px"
+              class="fill-current text-gray-400"
+              fill="#FFFFFF"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"
+              />
+            </svg>
+            <p class="line-clamp-1 text-gray-500 text-sm flex-grow flex-1">
+              Niaje buda hiyou mambo yaki msee ni kode tu bana alafu ile...lorem20
+            </p>
+          </div>
+        </div>
+
+        <!-- time chats online -->
+        <div class="flex flex-col items-end space-y-3">
+          <p class="font-semibold text-xs -mt-4 text-whatzapp-c">9.04 AM</p>
+          <p
+            class="
+              bg-whatzapp-c
+              text-xs
+              flex
+              items-center
+              justify-center
+              text-white
+              font-bold
+              rounded-full
+              w-5
+              h-5
+            "
+          >
+            3
+          </p>
+        </div>
+        <div
+          class="absolute bottom-3 left-14 h-0.5 w-full right-10 bg-gray-100"
+        ></div>
+      </div>
+
+      <div class="relative py-4 flex items-center space-x-3 overflow-hidden">
+        <!-- avator -->
+        <div class="flex items-center">
+          <img
+            class="rounded-full w-14 h-14 object-contain"
+            src="https://firebasestorage.googleapis.com/v0/b/amzn-clone-starter-nextjs.appspot.com/o/me.jpg?alt=media&token=5b9e74b2-89d6-4314-a5d5-5578e109d668"
+            alt="collo"
+          />
+        </div>
+
+        <!-- message -->
+        <div class="flex flex-grow flex-shrink-0 flex-1 flex-col">
+          <h1 class="font-semibold">Sautet</h1>
+          <div class="flex items-center space-x-1 w-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="36px"
+              viewBox="0 0 24 24"
+              width="16""
+              class="fill-current text-gray-400 h-4/6"
+              fill="#FFFFFF"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"
+              />
+            </svg>
+			
+            <p class="line-clamp-1 text-gray-500 text-sm flex-grow flex-1">
+              Lorem ipsum dolor sit amet consectetur adipisici lorem,
+              consectetur adipis
+            </p>
+          </div>
+        </div>
+
+        <!-- time chats online -->
+        <div class="flex flex-col items-end space-y-3">
+          <p class="font-semibold  -mt-4 text-whatzapp-c text-xs">YESTERDAY</p>
+        <div class="flex  items-center space-x-2">
+			<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" 
+			fill="#FFFFFF" class="fill-current text-gray-500"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+			  <p
+            class="
+              bg-whatzapp-c
+              text-xs
+              flex
+              items-center
+              justify-center
+              text-white
+              font-bold
+              rounded-full
+              w-5
+              h-5
+            "
+          >
+            3
+          </p>
+		</div>
+        </div>
+        <div
+          class="absolute bottom-3 left-14 h-0.5 w-full right-10 bg-gray-100"
+        ></div>
+      </div>
+	   <div class="relative py-4 flex items-center space-x-3 overflow-hidden">
+        <!-- avator -->
+        <div class="flex items-center">
+          <img
+            class="rounded-full w-14 h-14 object-contain"
+            src="https://firebasestorage.googleapis.com/v0/b/amzn-clone-starter-nextjs.appspot.com/o/nassib.jpg?alt=media&token=73f5f372-5acf-48ef-94d0-a5db0f48e34c"
+            alt="collo"
+          />
+        </div>
+
+        <!-- message -->
+        <div class="flex flex-grow flex-shrink-0 flex-1 flex-col">
+          <h1 class="font-semibold">Nassib J</h1>
+          <div class="flex items-center space-x-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="36px"
+              viewBox="0 0 24 24"
+              width="16px"
+              class="fill-current text-blue-400"
+              fill="#FFFFFF"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"
+              />
+            </svg>
+            <p class="line-clamp-1 text-gray-500 text-sm flex-grow flex-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iste sapiente iure itaque dolore at nulla ducimus vel non. Esse.
+            </p>
+          </div>
+        </div>
+
+        <!-- time chats online -->
+        <div class="flex flex-col items-end space-y-3">
+          <p class="font-semibold text-xs -mt-8 text-gray-300">9/27/2015</p>
+          <!-- <p
+            class="
+              bg-whatzapp-c
+              text-xs
+              flex
+              items-center
+              justify-center
+              text-white
+              font-bold
+              rounded-full
+              w-5
+              h-5
+            "
+          >
+            3
+          </p> -->
+        </div>
+        <div
+          class="absolute bottom-3 left-14 h-0.5 w-full right-10 bg-gray-100"
+        ></div>
+      </div>
+	   <div class="relative py-4 flex items-center space-x-3 overflow-hidden">
+        <!-- avator -->
+        <div class="flex items-center">
+          <img
+            class="rounded-full w-14 h-14 object-contain"
+            src="https://firebasestorage.googleapis.com/v0/b/amzn-clone-starter-nextjs.appspot.com/o/sammy.jpg?alt=media&token=771256c8-cb67-497a-85c9-aaec15299299"
+            alt="collo"
+          />
+        </div>
+
+        <!-- message -->
+        <div class="flex flex-grow flex-shrink-0 flex-1 flex-col">
+          <h1 class="font-semibold">Sammy</h1>
+          <div class="flex items-center space-x-1">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 24 24" width="24px" fill="#000000" class='fill-current text-gray-400'><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+            <p class="line-clamp-1 text-gray-500 text-sm flex-grow flex-1">
+              Niaje buda hiyou mambo yaki msee ni kode tu bana alafu ile...lorem20
+            </p>
+          </div>
+        </div>
+
+        <!-- time chats online -->
+        <div class="flex flex-col items-end space-y-3">
+          <p class="font-bold text-xs -mt-7 text-whatzapp-c">Online</p>
+          <!-- <p
+            class="
+              bg-whatzapp-c
+              text-xs
+              flex
+              items-center
+              justify-center
+              text-white
+              font-bold
+              rounded-full
+              w-5
+              h-5
+            "
+          >
+            
+          </p> -->
+        </div>
+        <div
+          class="absolute bottom-3 left-14 h-0.5 w-full right-10 bg-gray-100"
+        ></div>
+      </div>
+	   <div class="relative py-4 flex items-center space-x-3 overflow-hidden">
+        <!-- avator -->
+        <div class="flex items-center">
+          <img
+            class="rounded-full w-14 h-14 object-contain"
+            src="https://firebasestorage.googleapis.com/v0/b/amzn-clone-starter-nextjs.appspot.com/o/scot.jpg?alt=media&token=55778777-bb55-4419-b3ef-6a81a1f21183"
+            alt="collo"
+          />
+        </div>
+
+        <!-- message -->
+        <div class="flex flex-grow flex-shrink-0 flex-1 flex-col">
+          <h1 class="font-semibold">Scot</h1>
+          <div class="flex items-center space-x-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="36px"
+              viewBox="0 0 24 24"
+              width="16px"
+              class="fill-current text-blue-400"
+              fill="#FFFFFF"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"
+              />
+            </svg>
+            <p class="line-clamp-1 text-gray-500 text-sm flex-grow flex-1">
+             shida ya wakale ni nni buda???? msee ni kode tu bana alafu ile...lorem20
+            </p>
+          </div>
+        </div>
+
+        <!-- time chats online -->
+        <div class="flex flex-col items-end space-y-3">
+          <p class="font-semibold text-xs -mt-7 text-whatzapp-c">online</p>
+          <!-- <p
+            class="
+              bg-whatzapp-c
+              text-xs
+              flex
+              items-center
+              justify-center
+              text-white
+              font-bold
+              rounded-full
+              w-5
+              h-5
+            "
+          >
+            3
+          </p> -->
+        </div>
+        <div
+          class="absolute bottom-3 left-14 h-0.5 w-full right-10 bg-gray-100"
+        ></div>
+      </div>
+	   <div class="relative py-4 flex items-center space-x-3 overflow-hidden">
+        <!-- avator -->
+        <div class="flex items-center">
+          <img
+            class="rounded-full w-14 h-14 object-contain"
+            src="https://firebasestorage.googleapis.com/v0/b/amzn-clone-starter-nextjs.appspot.com/o/lonnah.jpg?alt=media&token=09f6572b-1dd0-4255-a8d7-1bdbc7ec7434"
+            alt="collo"
+          />
+        </div>
+
+        <!-- message -->
+        <div class="flex flex-grow flex-shrink-0 flex-1 flex-col">
+          <h1 class="font-semibold">Lonnah</h1>
+          <div class="flex items-center space-x-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="36px"
+              viewBox="0 0 24 24"
+              width="16px"
+              class="fill-current text-gray-400"
+              fill="#FFFFFF"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"
+              />
+            </svg>
+            <p class="line-clamp-1 text-gray-500 text-sm flex-grow flex-1">
+              Niaje buda hiyou mambo yaki msee ni kode tu bana alafu ile...lorem20
+            </p>
+          </div>
+        </div>
+
+        <!-- time chats online -->
+        <div class="flex flex-col items-end space-y-3">
+          <p class="font-semibold text-xs -mt-4 text-whatzapp-c">9.04 AM</p>
+          <!-- <p
+            class="
+              bg-whatzapp-c
+              text-xs
+              flex
+              items-center
+              justify-center
+              text-white
+              font-bold
+              rounded-full
+              w-5
+              h-5
+            "
+          >
+            3
+          </p> -->
+        </div>
+        <div
+          class="absolute bottom-3 left-14 h-0.5 w-full right-10 bg-gray-100"
+        ></div>
+      </div>
+    </div> </div>
+  </body>
+</html>
+
+<p class="hidden sm:inline-block">helo</p>
